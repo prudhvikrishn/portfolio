@@ -19,7 +19,7 @@ const About = () => (
         </h2>
         <div className="about-body">
           <p>
-            I am a <strong>B.Sc. Data Science</strong> student at VIT-AP University. Most of my work
+            I am a <strong>B.Sc.–M.Sc. Data Science</strong> (integrated) student at VIT-AP University. Most of my work
             is applied machine learning: predicting diabetes risk from patient data, sorting banking
             customer queries by intent, and ranking smart meter faults so utility teams know what to
             fix first.

@@ -28,7 +28,7 @@ export const navItems = [
 ]
 
 export const heroFacts = [
-  { label: 'Degree', value: 'B.Sc. Data Science, 2024 to 2027' },
+  { label: 'Degree', value: 'B.Sc.–M.Sc. Data Science, since 2024' },
   { label: 'Latest result', value: '96.42% Macro-F1, NLP classifier' },
   { label: 'Leadership', value: 'VP, Data Science Club' },
 ]
@@ -56,7 +56,7 @@ export const badgeClass = {
 export const skillGroups = [
   {
     title: 'Languages',
-    skills: ['Python', 'SQL', 'R (basic)', 'MATLAB', 'HTML/CSS'],
+    skills: ['Python', 'SQL', 'JavaScript', 'R (basic)', 'MATLAB', 'HTML/CSS'],
   },
   {
     title: 'Analysis and statistics',
@@ -102,6 +102,9 @@ export const skillGroups = [
       'Seaborn',
       'Flask',
       'Streamlit',
+      'React',
+      'Node.js',
+      'Express',
     ],
   },
   {
@@ -195,22 +198,25 @@ export const projects = [
   {
     id: 'smtps',
     thumb: { type: 'smtps' },
-    title: 'SMTPS: Smart Meter Ticketing System',
+    title: 'SMTPS: Smart Meter Tampering Prevention System and Ticket Prioritization',
     kind: 'Hackathon',
-    period: null,
+    period: '2026',
     categories: ['ml', 'hackathon'],
     summary:
-      'A ticketing system for utility providers that ranks smart meter issues by risk and connects field agents with the admin portal.',
+      'A platform for electricity providers that flags likely meter tampering and power theft and ranks which meters technicians should inspect first, with customer, technician and admin portals.',
     problem:
-      'Utility providers need to know which meters to fix first, and field agents and admins need one place to track each issue.',
+      'Utilities lose revenue to meter tampering and theft, and field teams need to know which meters to visit first.',
     approach: [
-      'Implemented K-Means clustering from scratch to group meters by risk and set ticket priority.',
-      'Built the field agent and admin portals in Flask with a SQLite database.',
+      'Wrote K-Means clustering from scratch to group the meters in each zone by energy discrepancy and consumption, so high-risk meters are inspected first.',
+      'Built an appliance audit: Tesseract OCR reads a BEE energy label from a photo, and fuzzy matching identifies the appliance to estimate expected load.',
+      'Scored theft risk by comparing billed consumption with the audited load and a vacation baseline, with email alerts to inspectors.',
+      'Built a React frontend and an Express + SQLite backend with about 25 API endpoints.',
     ],
-    result: 'Prioritised tickets so high-risk meters reach field agents first.',
-    stack: ['Python', 'Flask', 'SQLite', 'K-Means clustering'],
-    skills: ['Python', 'Flask', 'SQLite', 'K-Means clustering'],
-    links: [],
+    result:
+      'A working three-portal prototype with risk-ranked meter lists, AI-assisted audits, complaints, billing-anomaly checks and alerts.',
+    stack: ['JavaScript', 'React', 'Node.js', 'Express', 'SQLite', 'K-Means clustering'],
+    skills: ['JavaScript', 'React', 'Node.js', 'Express', 'SQLite', 'K-Means clustering'],
+    links: [{ label: 'GitHub', href: 'https://github.com/prudhvikrishn/smtps' }],
   },
   {
     id: 'virtual-screening',
@@ -270,6 +276,7 @@ export const leadership = {
   roles: [
     { title: 'Vice President', status: 'Current' },
     { title: 'V-TOP Manager', status: 'Previous' },
+    { title: 'Technical Team Member', status: '2024–25' },
   ],
   highlights: [
     {
@@ -281,6 +288,16 @@ export const leadership = {
 }
 
 export const achievements = [
+  {
+    title: 'Participant, Radiothon Winter 2026 hackathon',
+    org: 'Radion Inc.',
+    date: 'Jan 2026',
+  },
+  {
+    title: 'Member, Creative Department',
+    org: 'Microsoft Student Chapter, VIT-AP University',
+    date: '2024–25',
+  },
   {
     title: 'Winner, Cloud Clash',
     org: 'NextGen Cloud Club',
@@ -324,9 +341,10 @@ export const certifications = [
 export const education = {
   school: 'VIT-AP University',
   place: 'Amaravati, Andhra Pradesh',
-  degree: 'Bachelor of Science in Data Science',
-  period: 'Sep 2024 to May 2027',
+  degree: 'B.Sc.–M.Sc. Data Science (Integrated)',
+  period: 'Since Sep 2024',
   cgpa: '8.36',
+  standing: 'Top 20% of the 2024 B.Sc. Data Science batch',
 }
 
 // ---- Bank query classifier results (from github.com/prudhvikrishn/nlp README and figures) ----

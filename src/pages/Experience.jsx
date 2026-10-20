@@ -2,7 +2,7 @@ import Reveal from '../components/Reveal'
 import { achievements, certifications, education, leadership } from '../data'
 
 const Experience = () => {
-  const [current, previous] = leadership.roles
+  const [current, ...pastRoles] = leadership.roles
   const workshop = leadership.highlights[0]
 
   const timeline = [
@@ -13,12 +13,12 @@ const Experience = () => {
       isCurrent: true,
       points: [`${workshop.title}, ${workshop.date}. ${workshop.text}`],
     },
-    previous && { date: previous.status, role: previous.title, org: leadership.org, points: [] },
+    ...pastRoles.map((r) => ({ date: r.status, role: r.title, org: leadership.org, points: [] })),
     {
       date: education.period,
       role: education.degree,
       org: `${education.school}, ${education.place}`,
-      points: [`CGPA ${education.cgpa}`],
+      points: [`CGPA ${education.cgpa}`, education.standing].filter(Boolean),
     },
   ].filter(Boolean)
 
