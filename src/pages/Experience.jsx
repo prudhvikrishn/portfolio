@@ -78,9 +78,11 @@ const Experience = () => {
                     <span className="award-date">{c.date}</span>
                   </div>
                   {c.org && <p className="award-org">{c.org}</p>}
-                  <a href={c.href} target="_blank" rel="noopener noreferrer" className="text-link">
-                    View certificate
-                  </a>
+                  {c.href && (
+                    <a href={c.href} target="_blank" rel="noopener noreferrer" className="text-link">
+                      View certificate
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>

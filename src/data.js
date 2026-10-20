@@ -328,7 +328,6 @@ export const certifications = [
     title: 'Full-Stack Development',
     org: 'Purple Technologies',
     date: 'Jan to Mar 2025',
-    href: 'https://cert.certifidoc.com/certificate/f57d3e24-2779-4a3a-be66-47160497df2f',
   },
   {
     title: 'AWS APAC Certification',
