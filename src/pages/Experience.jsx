@@ -2,7 +2,7 @@ import Reveal from '../components/Reveal'
 import { achievements, certifications, education, leadership } from '../data'
 
 const Experience = () => {
-  const [current] = leadership.roles
+  const [current, previous] = leadership.roles
   const workshop = leadership.highlights[0]
 
   const timeline = [
@@ -13,6 +13,7 @@ const Experience = () => {
       isCurrent: true,
       points: [`${workshop.title}, ${workshop.date}. ${workshop.text}`],
     },
+    { date: previous.status, role: previous.title, org: leadership.org, points: [] },
     {
       date: education.period,
       role: education.degree,

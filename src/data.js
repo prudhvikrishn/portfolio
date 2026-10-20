@@ -268,6 +268,7 @@ export const leadership = {
   org: 'Data Science Club, VIT-AP University',
   roles: [
     { title: 'Vice President', status: 'Current' },
+    { title: 'V-TOP Manager', status: 'Previous' },
   ],
   highlights: [
     {
