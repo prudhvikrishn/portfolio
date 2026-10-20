@@ -40,7 +40,7 @@ const NlpResults = () => {
             <img src={`${import.meta.env.BASE_URL}projects/nlp/customer-page.png`} alt="The classifier web app: a customer query about a $450 charge, labelled Fraud Report with 99.3% confidence, with the closest matches and extracted details" loading="lazy" width="1280" height="900" />
             <figcaption>
               The customer page of the deployed Flask app.{' '}
-              <a className="text-link" href="https://nlp-zeta-beryl.vercel.app/submit" target="_blank" rel="noopener noreferrer">Try the live demo</a>
+              <a className="text-link" href="https://nlp-zeta-beryl.vercel.app/" target="_blank" rel="noopener noreferrer">Try the live demo</a>
             </figcaption>
           </figure>
         )}

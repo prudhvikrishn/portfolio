@@ -13,14 +13,14 @@ const Experience = () => {
       isCurrent: true,
       points: [`${workshop.title}, ${workshop.date}. ${workshop.text}`],
     },
-    { date: previous.status, role: previous.title, org: leadership.org, points: [] },
+    previous && { date: previous.status, role: previous.title, org: leadership.org, points: [] },
     {
       date: education.period,
       role: education.degree,
       org: `${education.school}, ${education.place}`,
       points: [`CGPA ${education.cgpa}`],
     },
-  ]
+  ].filter(Boolean)
 
   return (
     <section id="experience" className="section">

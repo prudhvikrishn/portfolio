@@ -166,7 +166,7 @@ export const projects = [
       'Feature engineering', 'Model evaluation', 'Data cleaning', 'Exploratory data analysis',
     ],
     links: [
-      { label: 'Live demo', href: 'https://nlp-zeta-beryl.vercel.app/submit' },
+      { label: 'Live demo', href: 'https://nlp-zeta-beryl.vercel.app/' },
       { label: 'GitHub', href: 'https://github.com/prudhvikrishn/nlp' },
     ],
   },
