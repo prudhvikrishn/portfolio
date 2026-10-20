@@ -10,7 +10,7 @@ export const profile = {
   initials: 'PK',
   role: 'Data Science Student',
   university: 'VIT-AP University',
-  email: 'prudhvikrishnadupakuntla2004@gmail.com',
+  email: 'prudhvikrishnad@gmail.com',
   linkedin: 'https://www.linkedin.com/in/prudhvi30/',
   linkedinLabel: 'linkedin.com/in/prudhvi30',
   github: 'https://github.com/prudhvikrishn',
